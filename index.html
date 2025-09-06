@@ -3,50 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Explore o Mundo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>empresa</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-    </header>
+        <div class="container">
+            <h1>Empresa de Viagens</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#destinos">Sobre</a></li>
+                        <li><a href="#sobre">Destinos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+        </header>
 
-    <main>
-        <section id="hero">
-            <h2>Bem-vindo à nossa página</h2>
-            <p>Oferecemos soluções criativas para seu negócio</p>
-            <img src="" alt="imagem">
-        </section>
+        <main>
+            <section class="hero">
+                <div class="overlay">
 
-        <section id="sobre">
-            <h2>página</h2>
-            <p> negocio</p>
-            <img src="" alt="imagem">
-        </section>
+                    <h2>Descubra novos destinos incríveis</h2>
+                    <p>Planeje sua próxima aventura com a travel</p>
+                </div>
+            </section>
 
-        <section id="servicos">
-            <h2>página</h2>
-            <p> negocio</p>
-            <img src="" alt="imagem">
-        </section>
+            <section id="destinos" class="destinos">
+                <h2>Destinos Populares</h2>
+                <div class="cards">
+                    <div class="card">
+                    <img src="./imagens/paris.jpg" alt="Paris">
+                    <h3>Paris,França</h3>
+                </div>
+                <div class="card">
+                    <img src="./imagens/rio de janeiro.jpg" alt="Rio de Janeiro">
+                    <h3>Rio de Janeiro, Brasil</h3>
+                </div>
+                <div class="card">
+                    <img src="./imagens/toquio.jpg" alt="Tóquio">
+                     <h3>Tóquio, Japão</h3>
+                </div>
+                </div>
+            </section>
 
-        <section id="contato">
-            <h2>fale conosco</h2>
-            <form>
+            <section id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>Somos apaixonados por viagens e acreditamos que cada destino tem algo único a oferecer.
+        Nossa missão é tornar sua experiência inesquecível, com suporte completo do planejamento à volta para casa.</p>
                 
-            </form>
+            </section>
 
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+            <section id="contato">
+                <h2>Entre em contato conosco</h2>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="text" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                   
+
+                    <BUtton type="submit">Enviar</BUtton>
+                </form>
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 todos os direitos reservados.</p>
+        </footer>
+    </body>
+    </html>

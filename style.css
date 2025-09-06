@@ -4,75 +4,154 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1,6;
-    background-color: #f4f4f4;
-    color: #333;
+    scroll-behavior: smooth;
 }
 
 header{
-    background-color: #333;
+    background-color: #0d1b2a;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
+    top: 0;
+    z-index: 10;
 }
 
-header h1{
-    margin-bottom: 10px;
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
-nav a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-main{
-    padding: 20px;
+    font-weight: bold;
 }
 
-#hero {
+
+.btn{
+padding: 10px 20px;
+background-color: #e94e36;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.destinos{
+    padding: 60px 20px;
+    background-color: #f4f4f4;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-#hero img{
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30x;
+
 }
-section{
-    margin-bottom: 40px;
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
 }
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    padding: 15px;
+}
+
+.sobre{
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-size: 1,1em;
+    line-height: 1,6;
+}
+
+.contado{
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
 form{
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
+    gap: 15px;
+    text-align: left;
 }
-input, textarea{
+form label{
+    font-weight: bold;
+}
+form input, form textarea{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
 
-button{
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+form button{
+    padding: 10x;
+    background-color: #e94e36;
+    color: white;
     border: none;
-    cursor:pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
 }
-button:hover{
-    background-color: #555;
-}
+
 footer{
-    background-color: #333;
+    background-color: #0d1b2a;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
+}
+
+@media(max-width:768px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+.container{
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+nav ul{
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
 }
